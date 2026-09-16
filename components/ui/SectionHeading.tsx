@@ -1,21 +1,16 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { cn } from "./utils";
 
-export interface SectionHeadingProps extends HTMLAttributes<HTMLDivElement> {
+export interface SectionHeadingProps extends Omit<
+  HTMLAttributes<HTMLDivElement>,
+  "title"
+> {
   eyebrow?: string;
   title: ReactNode;
   description?: ReactNode;
   align?: "left" | "center";
 }
 
-/**
- * <SectionHeading
- *   eyebrow="Our Services"
- *   title="Care designed around you"
- *   description="A calm, considered approach to hair restoration and skin health."
- *   align="center"
- * />
- */
 export function SectionHeading({
   eyebrow,
   title,
@@ -40,11 +35,15 @@ export function SectionHeading({
           {eyebrow}
         </span>
       )}
+
       <h2 className="text-3xl font-semibold leading-tight text-charcoal sm:text-4xl">
         {title}
       </h2>
+
       {description && (
-        <p className="text-base leading-relaxed text-muted sm:text-lg">{description}</p>
+        <p className="text-base leading-relaxed text-muted sm:text-lg">
+          {description}
+        </p>
       )}
     </div>
   );
