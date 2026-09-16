@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  /* Sakha Brand Colors */
+  --color-primary: #320154;
+  --color-primary-dark: #210038;
+  --color-orchid: #9a3fa5;
+  --color-orchid-light: #c96bd5;
+  --color-champagne: #c9a86a;
+
+  /* Backgrounds */
+  --color-ivory: #faf8f5;
+  --color-lavender: #f2eaf4;
+  --color-white: #ffffff;
+
+  /* Text */
+  --color-charcoal: #18151b;
+  --color-muted: #716b75;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-orchid: var(--color-orchid);
+  --color-orchid-light: var(--color-orchid-light);
+  --color-champagne: var(--color-champagne);
+
+  --color-ivory: var(--color-ivory);
+  --color-lavender: var(--color-lavender);
+  --color-white: var(--color-white);
+
+  --color-charcoal: var(--color-charcoal);
+  --color-muted: var(--color-muted);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
