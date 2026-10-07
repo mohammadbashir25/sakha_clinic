@@ -5,11 +5,13 @@ export interface BlogPost {
   title: string;
   slug: string;
   excerpt: string;
+  /** Full article body. Optional so older/mock posts without it still type-check. */
+  content?: string;
   category: string;
   author: string;
   status: BlogStatus;
   createdAt: string;
-  updatedAt: string
+  updatedAt: string;
   /** ISO date — published date when published, created date when draft. */
   date: string;
   coverImage: string;

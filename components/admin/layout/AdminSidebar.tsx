@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { LuLogOut } from "react-icons/lu";
 import { AdminNavLinks } from "./AdminNavLinks";
@@ -7,6 +9,11 @@ import { AdminNavLinks } from "./AdminNavLinks";
  * screens. Hidden below md, where MobileSidebar takes over instead.
  */
 export function AdminSidebar() {
+  async function handleSignOut() {
+    await fetch("/api/admin/logout", { method: "POST" });
+    window.location.href = "/admin/login";
+  }
+
   return (
     <aside className="hidden shrink-0 md:sticky md:top-0 md:flex md:h-dvh md:w-56 md:flex-col md:border-r md:border-white/10 md:bg-primary-dark lg:w-64">
       <div className="flex h-full flex-col px-4 py-6">
@@ -15,8 +22,12 @@ export function AdminSidebar() {
             S
           </span>
           <span className="flex min-w-0 flex-col leading-tight">
-            <span className="truncate text-sm font-semibold tracking-[0.08em] text-ivory">SAKHA</span>
-            <span className="truncate text-[11px] tracking-[0.14em] text-lavender/50">Admin</span>
+            <span className="truncate text-sm font-semibold tracking-[0.08em] text-ivory">
+              SAKHA
+            </span>
+            <span className="truncate text-[11px] tracking-[0.14em] text-lavender/50">
+              Admin
+            </span>
           </span>
         </Link>
 
@@ -29,9 +40,13 @@ export function AdminSidebar() {
         <div className="border-t border-white/10 pt-4">
           <button
             type="button"
+            onClick={handleSignOut}
             className="flex w-full items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium text-lavender/60 transition-colors duration-200 hover:bg-white/5 hover:text-ivory focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-2 focus-visible:ring-offset-primary-dark"
           >
-            <LuLogOut className="h-[18px] w-[18px] shrink-0" aria-hidden="true" />
+            <LuLogOut
+              className="h-[18px] w-[18px] shrink-0"
+              aria-hidden="true"
+            />
             <span>Sign out</span>
           </button>
         </div>

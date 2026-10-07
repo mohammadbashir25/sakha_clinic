@@ -2,59 +2,97 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
+import { useTranslations } from "next-intl";
+import { PiFlowerLotusLight } from "react-icons/pi";
 import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { heroData } from "./data";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
- * Hero image column. Client Component: on mount, a deep-purple panel
- * wipes away (like a curtain) while the image settles from a slight
- * zoom into place — a one-time reveal, not a scroll-linked effect.
- * Falls back to ImagePlaceholder until real clinic photography (data.ts)
- * is supplied, and to a static render for reduced-motion users.
+ * Doctor portrait in an arch-shaped frame with a thin offset outline (an
+ * architectural detail, not a glow or blob) and a solid caption card with
+ * the doctor's name and specialties plus a small lotus mark.
+ *
+ * The reveal is a one-time upward clip with a gentle settle from a slight
+ * zoom. With reduced motion everything renders in its final state.
+ * The offset outline and caption use logical properties (-end-3, start-3,
+ * inset-x-3), so the composition mirrors correctly in Dari / Pashto.
+ *
+ * Falls back to ImagePlaceholder until `heroData.image.src` is set.
+ * Alt text and caption come from Hero.doctorName / Hero.doctorTitle.
  */
 export function HeroVisual() {
+  const t = useTranslations("Hero");
   const shouldReduceMotion = useReducedMotion();
   const { image } = heroData;
 
   return (
-    <div className="group relative aspect-[4/5] w-full max-h-[420px] overflow-hidden rounded-2xl bg-lavender sm:max-h-[480px] lg:aspect-[4/5] lg:max-h-[560px]">
+    <figure className="relative mx-auto w-full max-w-sm lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1 lg:mx-0 lg:max-w-md lg:justify-self-end">
+      <div
+        aria-hidden="true"
+        className="absolute -bottom-3 -end-3 start-3 top-3 rounded-b-2xl rounded-t-[10rem] border border-primary/20"
+      />
+
       <motion.div
-        className="h-full w-full"
-        initial={shouldReduceMotion ? false : { scale: 1.12, opacity: 0.6 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.1, ease: EASE, delay: shouldReduceMotion ? 0 : 0.2 }}
+        className="relative z-10 w-full overflow-hidden rounded-b-2xl rounded-t-[10rem] bg-lavender aspect-[3/4]"
+        initial={
+          shouldReduceMotion
+            ? false
+            : {
+                opacity: 0,
+                y: 20,
+              }
+        }
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.9,
+          ease: EASE,
+          delay: 0.15,
+        }}
       >
         {image.src ? (
           <Image
             src={image.src}
-            alt={image.alt}
+            alt={t("doctorName")}
             fill
             priority
-            sizes="(min-width: 1024px) 45vw, 100vw"
-            className="object-cover transition-transform duration-700 ease-out md:group-hover:scale-105"
+            sizes="(min-width: 1024px) 40vw, 90vw"
+            className="object-cover object-top"
           />
         ) : (
-          <ImagePlaceholder label={image.alt} aspectRatio="portrait" className="h-full w-full rounded-none border-none" />
+          <ImagePlaceholder
+            label={t("doctorName")}
+            aspectRatio="portrait"
+            className="h-full w-full rounded-none border-none"
+          />
         )}
       </motion.div>
 
-      {!shouldReduceMotion && (
-        <motion.div
+      <motion.figcaption
+        className="absolute inset-x-3 bottom-3 z-20 flex items-center gap-3 rounded-xl bg-ivory p-3.5 shadow-[0_14px_34px_-20px_rgba(24,10,32,0.45)] sm:p-4"
+        initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: EASE, delay: 0.9 }}
+      >
+        <span
           aria-hidden="true"
-          className="absolute inset-0 origin-left bg-primary"
-          initial={{ scaleX: 1 }}
-          animate={{ scaleX: 0 }}
-          transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-        />
-      )}
-
-      {image.caption && (
-        <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/60 to-transparent px-5 py-4 text-sm text-ivory">
-          {image.caption}
-        </p>
-      )}
-    </div>
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-primary/25 bg-primary/5 text-primary"
+        >
+          <PiFlowerLotusLight size={22} />
+        </span>
+        <span className="flex min-w-0 flex-col">
+          <span className="text-sm font-semibold text-primary sm:text-base">
+            {t("doctorName")}
+          </span>
+          <span className="mt-0.5 text-xs leading-snug text-muted">
+            {t("doctorTitle")}
+          </span>
+        </span>
+      </motion.figcaption>
+    </figure>
   );
 }

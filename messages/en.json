@@ -1,0 +1,592 @@
+{
+  "Navbar": {
+    "brandName": "Sakha",
+    "brandFullName": "Dr. Ahmad Fahim Sakha",
+    "brandSubtitle": "Dermatology · Hair · Medical Aesthetics",
+
+    "home": "Home",
+    "about": "About Dr. Sakha",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+
+    "bookAppointment": "Book an Appointment",
+    "menu": "Menu",
+    "close": "Close",
+
+    "language": "Language",
+    "selectLanguage": "Select language",
+
+    "languages": {
+      "en": "English",
+      "fa": "Dari",
+      "ps": "Pashto"
+    }
+  },
+  "Hero": {
+    "eyebrow": "Dermatology · Hair · Medical Aesthetics",
+    "title": "Medical precision.",
+    "titleAccent": "Natural beauty.",
+    "description": "Personalized dermatology, hair restoration, medical aesthetics, and laser care focused on natural, balanced results.",
+    "primaryCta": "Book an Appointment",
+    "secondaryCta": "Explore Services",
+    "experience": "4+ Years Experience",
+    "experienceDescription": "Professional experience in Iran and Afghanistan",
+    "specialty": "Specialized Care",
+    "specialtyDescription": "Skin · Hair · Aesthetics · Transplant · Laser",
+    "doctorName": "Dr. Ahmad Fahim Sakha",
+    "doctorTitle": "Dermatology · Hair · Medical Aesthetics · Hair Transplant · Laser",
+    "quote": "More change does not always mean better results. The goal is to preserve your natural identity while improving what matters to you."
+  },
+    "ProblemDesire": {
+    "eyebrow": "Your concerns matter",
+    "title": "Understanding your concerns is the first step.",
+    "description": "Skin, hair, and appearance concerns are different for every person. The right approach begins with understanding your needs, evaluating what is appropriate, and choosing a treatment that fits you.",
+    
+    "concernsTitle": "Common concerns",
+    "concernsDescription": "Whether the concern involves your skin, hair, or facial appearance, every case deserves individual attention.",
+    
+    "concerns": {
+      "skin": "Persistent skin problems, acne, or scars",
+      "hair": "Hair loss, thinning hair, or changes in hair density",
+      "appearance": "Facial lines, changes in skin quality, or signs of aging",
+      "transplant": "Considering hair, beard, or eyebrow transplantation",
+      "aesthetics": "Looking for subtle and natural aesthetic refinement",
+      "laser": "Unwanted hair or concerns that may benefit from laser care"
+    },
+
+    "desireEyebrow": "What you are looking for",
+    "desireTitle": "Natural results that still feel like you.",
+    "desireDescription": "The goal is not to change who you are. It is to improve what matters to you while respecting your natural features, proportions, and individuality.",
+    
+    "desires": {
+      "natural": {
+        "title": "Natural appearance",
+        "description": "Results that respect your features and maintain a balanced appearance."
+      },
+      "personalized": {
+        "title": "Personalized care",
+        "description": "An approach selected according to your skin, hair, facial structure, and individual needs."
+      },
+      "precision": {
+        "title": "Thoughtful treatment",
+        "description": "Choosing the appropriate method after careful assessment and professional evaluation."
+      },
+      "confidence": {
+        "title": "Greater confidence",
+        "description": "Improving the areas that matter to you while preserving your natural identity."
+      }
+    },
+
+    "closing": "More change does not always mean a better result. The right treatment is the one that is appropriate for you."
+  },
+  "SignatureServices": {
+    "eyebrow": "Selected Services",
+    "title": "Specialized care, shaped around your needs.",
+    "description": "From hair restoration and medical aesthetics to skin care and laser treatments, each service is selected and performed according to your individual needs and professional assessment.",
+    "viewAll": "Explore All Services",
+    "bookAppointment": "Book an Appointment",
+
+    "services": {
+      "hairTransplant": {
+        "number": "01",
+        "title": "Hair Transplantation",
+        "description": "Hair, beard, and eyebrow transplantation planned with attention to natural proportions, individual features, and long-term appearance.",
+        "link": "Explore Hair Transplantation"
+      },
+      "hairLoss": {
+        "number": "02",
+        "title": "Hair Loss Treatment",
+        "description": "Assessment and treatment options for hair loss and thinning, including regenerative approaches selected according to individual needs.",
+        "link": "Explore Hair Loss Treatment"
+      },
+      "aesthetics": {
+        "number": "03",
+        "title": "Medical Aesthetics",
+        "description": "Botox, fillers, and selected aesthetic procedures focused on subtle refinement, facial balance, and natural-looking results.",
+        "link": "Explore Medical Aesthetics"
+      },
+      "skin": {
+        "number": "04",
+        "title": "Skin Care & Rejuvenation",
+        "description": "Professional care for common skin concerns and skin quality, including acne, Hydrafacial, microneedling, and rejuvenation treatments.",
+        "link": "Explore Skin Care"
+      },
+      "laser": {
+        "number": "05",
+        "title": "Laser Treatments",
+        "description": "Selected laser treatments for unwanted hair, skin rejuvenation, fractional resurfacing, and tattoo fading according to individual needs.",
+        "link": "Explore Laser Treatments"
+      },
+      "facialFillers": {
+        "number": "06",
+        "title": "Facial Fillers & Contouring",
+        "description": "Specialized filler treatments for areas such as the lips, cheeks, nose, and under-eye area, with an emphasis on proportion and natural facial balance.",
+        "link": "Explore Facial Fillers"
+      }
+    },
+
+    "philosophy": {
+      "eyebrow": "Dr. Sakha's Approach",
+      "title": "The right treatment begins with the right assessment.",
+      "description": "Every person has different skin, hair, facial structure, and goals. The aim is to choose an appropriate approach that respects those differences and supports natural, balanced results."
+    }
+  },
+    "BeforeAfter": {
+    "eyebrow": "Before & After",
+    "title": "Real treatment journeys. Naturally presented.",
+    "description": "A selection of client-provided before-and-after images showing visible changes following selected treatments. Each case is individual, and results may vary.",
+    "viewCase": "View Case",
+    "previous": "Previous case",
+    "next": "Next case",
+    "goToCase": "Go to case",
+    "before": "Before",
+    "after": "After",
+    "case": "Case",
+    "disclaimer": "Before-and-after images are provided for visual reference only. Individual results vary depending on the person, treatment, and other factors.",
+    "ctaTitle": "Considering a treatment?",
+    "ctaDescription": "Start with a professional assessment to understand which approach may be appropriate for you.",
+    "bookAppointment": "Book an Appointment"
+  },
+    "Testimonials": {
+    "eyebrow": "Patient Experiences",
+    "title": "Real experiences, thoughtfully shared.",
+    "description": "Read experiences shared by patients who have chosen Dr. Ahmad Fahim Sakha for their skin, hair, and aesthetic care.",
+
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "goToTestimonial": "Go to testimonial",
+
+    "testimonial": "Testimonial",
+    "treatment": "Treatment",
+
+    "emptyTitle": "Patient experiences will appear here.",
+    "emptyDescription": "Testimonials will be shared here as patients choose to provide their experience.",
+
+    "errorTitle": "Testimonials are temporarily unavailable.",
+    "errorDescription": "Please check back again later.",
+
+    "ctaTitle": "Your care starts with a conversation.",
+    "ctaDescription": "Begin with a professional assessment to discuss your concerns and explore an appropriate treatment approach.",
+    "bookAppointment": "Book an Appointment"
+  },
+    "FinalCTA": {
+    "eyebrow": "Your next step",
+    "title": "The right care begins with understanding what you need.",
+    "description": "Whether you are considering hair restoration, skin treatment, or aesthetic care, your journey starts with a professional assessment and a treatment approach suited to you.",
+    "primaryCta": "Book an Appointment",
+    "secondaryCta": "Explore Services",
+    "note": "Professional assessment · Personalized care · Natural-looking results"
+  },
+    "Footer": {
+    "brandName": "Sakha",
+    "brandFullName": "Dr. Ahmad Fahim Sakha",
+    "description": "Dermatology, hair restoration, and medical aesthetics focused on professional assessment, personalized care, and natural-looking results.",
+
+    "navigationTitle": "Explore",
+    "contactTitle": "Contact",
+    "appointmentTitle": "Appointments",
+
+    "home": "Home",
+    "about": "About Dr. Sakha",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+
+    "bookAppointment": "Book an Appointment",
+    "getInTouch": "Get in Touch",
+
+    "locationLabel": "Location",
+    "location": "Mazar-e-Sharif, Afghanistan",
+
+    "copyright": "© {year} Dr. Ahmad Fahim Sakha. All rights reserved.",
+    "disclaimer": "Information on this website is for general informational purposes and does not replace professional medical consultation.",
+
+    "language": "Language",
+    "followUs": "Follow Us"
+  },
+    "AboutPage": {
+    "hero": {
+      "eyebrow": "About Dr. Sakha",
+      "title": "Medical precision, natural beauty, personalized care.",
+      "description": "Dr. Ahmad Fahim Sakha works across dermatology, hair restoration, medical aesthetics, and laser treatments, with an approach centered on careful assessment and natural, balanced results."
+    },
+
+    "profile": {
+      "eyebrow": "Dr. Ahmad Fahim Sakha",
+      "title": "A thoughtful approach to skin, hair, and aesthetic care.",
+      "description": "Dr. Ahmad Fahim Sakha is a physician working in dermatology, hair, medical aesthetics, hair transplantation, and laser treatments. His approach begins with understanding each person's needs before selecting an appropriate treatment.",
+      "specialties": "Physician · Dermatology & Hair · Medical Aesthetics · Hair Transplantation · Laser"
+    },
+
+    "experience": {
+      "eyebrow": "Professional Experience",
+      "title": "Experience shaped across two healthcare settings.",
+      "description": "Dr. Sakha has four years of experience working in reputable clinics and medical centers in Iran, followed by more than two years of professional experience in Afghanistan.",
+      "iran": {
+        "number": "01",
+        "title": "Experience in Iran",
+        "description": "Four years of professional experience in reputable clinics and medical centers in Iran."
+      },
+      "afghanistan": {
+        "number": "02",
+        "title": "Practice in Afghanistan",
+        "description": "More than two years of professional experience in Afghanistan, including private practice and Jihon Hospital."
+      }
+    },
+
+    "approach": {
+      "eyebrow": "His Approach",
+      "title": "The goal is not more change. It is the right change.",
+      "description": "Aesthetic care is not simply about changing appearance. Dr. Sakha considers skin condition, hair, facial structure, proportions, and individual needs before choosing an appropriate approach.",
+      "principles": {
+        "assessment": {
+          "title": "Careful assessment",
+          "description": "Understanding the condition, concerns, and individual characteristics before selecting a treatment."
+        },
+        "personalization": {
+          "title": "Personalized treatment",
+          "description": "Choosing an approach according to the person's skin, hair, facial structure, and specific needs."
+        },
+        "natural": {
+          "title": "Natural proportions",
+          "description": "Respecting natural features and avoiding unnecessary or excessive change."
+        },
+        "followUp": {
+          "title": "Continued care",
+          "description": "Following recovery and response to treatment and considering whether continuation or adjustment is appropriate."
+        }
+      }
+    },
+
+    "expertise": {
+      "eyebrow": "Areas of Practice",
+      "title": "Focused care across skin, hair, and medical aesthetics.",
+      "description": "Dr. Sakha's practice includes a range of dermatology, hair restoration, aesthetic, and laser services selected according to individual needs.",
+      "items": {
+        "dermatology": "Dermatology and common skin conditions",
+        "hairLoss": "Hair loss assessment and treatment",
+        "transplant": "Hair, beard, and eyebrow transplantation",
+        "aesthetics": "Medical aesthetics and facial refinement",
+        "regenerative": "PRP, PRF, mesotherapy, and regenerative approaches",
+        "laser": "Laser hair removal and selected laser skin treatments",
+        "acne": "Acne and scar care",
+        "skinQuality": "Skin rejuvenation and skin-quality treatments"
+      }
+    },
+
+    "biofiller": {
+      "eyebrow": "A Specialized Interest",
+      "title": "Biofiller and modern facial rejuvenation.",
+      "description": "Biofiller is one of Dr. Sakha's areas of special focus. He has been involved in introducing and performing this approach in Afghanistan, with an emphasis on appropriate patient selection and natural-looking outcomes.",
+      "note": "Treatment suitability is determined through individual professional assessment."
+    },
+
+    "learning": {
+      "eyebrow": "Continuous Development",
+      "title": "Keeping knowledge and skills current.",
+      "description": "Dr. Sakha seeks to keep his knowledge and practical skills updated across dermatology, hair care, aesthetic procedures, injections, hair transplantation, and laser technologies so that treatment options can be considered thoughtfully for each patient."
+    },
+
+    "journey": {
+      "eyebrow": "The Patient Journey",
+      "title": "From assessment to follow-up.",
+      "steps": {
+        "assessment": {
+          "number": "01",
+          "title": "Initial assessment",
+          "description": "Understanding your concerns, condition, and individual needs."
+        },
+        "selection": {
+          "number": "02",
+          "title": "Treatment selection",
+          "description": "Considering which approach may be appropriate based on the assessment."
+        },
+        "treatment": {
+          "number": "03",
+          "title": "Precise treatment",
+          "description": "Carrying out the selected treatment with attention to appropriate technique and detail."
+        },
+        "followUp": {
+          "number": "04",
+          "title": "Follow-up",
+          "description": "Monitoring recovery and response and considering whether further care or adjustment is appropriate."
+        }
+      }
+    },
+
+    "philosophy": {
+      "eyebrow": "A Personal Philosophy",
+      "title": "More change does not always mean a better result.",
+      "description": "The aim is to improve what matters to you while preserving your natural identity, proportions, and individual features.",
+      "quote": "Medical precision. Natural beauty. Personalized care."
+    },
+
+    "cta": {
+      "eyebrow": "Your Next Step",
+      "title": "Start with a professional assessment.",
+      "description": "Discuss your concerns with Dr. Sakha and explore an approach that is appropriate for your individual needs.",
+      "primary": "Book an Appointment",
+      "secondary": "Explore Services"
+    }
+  },
+  "ServicesPage": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Focused care for skin, hair, and aesthetic needs.",
+      "description": "Explore the treatments offered by Dr. Ahmad Fahim Sakha across hair restoration, dermatology, medical aesthetics, and laser care."
+    },
+    "cta": {
+      "primary": "Book an Appointment",
+      "title": "The right treatment starts with the right assessment.",
+      "description": "Discuss your concerns with Dr. Sakha and explore which approach may be appropriate for you."
+    },
+    "directory": {
+      "eyebrow": "Treatment Directory",
+      "title": "Explore the services",
+      "description": "Each treatment begins with understanding your individual condition and selecting an approach appropriate to your needs.",
+      "viewService": "View Service"
+    },
+    "categories": {
+      "all": "All Services",
+      "hair": "Hair & Transplantation",
+      "aesthetics": "Medical Aesthetics",
+      "skin": "Skin & Rejuvenation",
+      "laser": "Laser Treatments"
+    },
+    "related": {
+      "title": "You may also be interested in"
+    },
+    "detail": {
+      "back": "Back to Services",
+      "assessment": {
+        "title": "Treatment begins with assessment.",
+        "description": "The appropriate treatment depends on your individual condition, needs, and suitability. A professional assessment is the first step."
+      },
+      "disclaimer": "Treatment suitability, technique, and expected response vary from person to person."
+    },
+    "metadata": {
+      "title": "Services | Dr. Ahmad Fahim Sakha",
+      "description": "Hair restoration, dermatology, medical aesthetics, and laser treatments by Dr. Ahmad Fahim Sakha."
+    },
+    "services": {
+      "hairTransplant": {
+        "title": "Hair Transplant",
+        "description": "Hair transplantation planned around each person's hair characteristics, density, and the natural-looking result they want."
+      },
+      "beardTransplant": {
+        "title": "Beard Transplant",
+        "description": "Beard transplantation to improve density and shape while keeping a natural appearance."
+      },
+      "eyebrowTransplant": {
+        "title": "Eyebrow Transplant",
+        "description": "Eyebrow transplantation focused on creating natural density and a suitable shape."
+      },
+      "hairLossTreatment": {
+        "title": "Hair Loss Treatment",
+        "description": "Assessment and treatment of hair loss according to its pattern, stage, and individual needs."
+      },
+      "prpHairFace": {
+        "title": "PRP for Hair & Face",
+        "description": "PRP-based treatment for selected hair and facial care needs, after individual assessment."
+      },
+      "mesotherapyHairFace": {
+        "title": "Mesotherapy for Hair & Face",
+        "description": "Mesotherapy for selected hair and facial concerns, based on an individual treatment assessment."
+      },
+      "mesogel": {
+        "title": "Mesogel",
+        "description": "Mesogel treatment chosen for suitable skin and rejuvenation needs."
+      },
+      "biofiller": {
+        "title": "Biofiller",
+        "description": "A specialized approach to facial rejuvenation and restoration, selected according to individual suitability."
+      },
+      "botox": {
+        "title": "Botox",
+        "description": "Botox for selected facial lines and wrinkles, with attention to a balanced and natural result."
+      },
+      "lipFiller": {
+        "title": "Lip Filler",
+        "description": "Lip filler focused on balanced shape and proportion, according to each person's facial features."
+      },
+      "cheekFiller": {
+        "title": "Cheek Filler",
+        "description": "Cheek filler for selected concerns about facial contour and volume, based on individual assessment."
+      },
+      "noseFiller": {
+        "title": "Nose Filler",
+        "description": "Nose filler for selected aesthetic concerns and facial balance, after professional assessment."
+      },
+      "underEyeFiller": {
+        "title": "Under-Eye Filler",
+        "description": "Filler treatment for under-eye hollows in selected cases, after individual assessment."
+      },
+      "acneTreatment": {
+        "title": "Acne Treatment",
+        "description": "Assessment and treatment planning for acne and related skin concerns."
+      },
+      "hydrafacial": {
+        "title": "Hydrafacial",
+        "description": "A facial treatment focused on cleansing, freshness, and supporting overall skin quality."
+      },
+      "microneedling": {
+        "title": "Microneedling",
+        "description": "Microneedling chosen for suitable skin quality and rejuvenation needs."
+      },
+      "laserHairRemoval": {
+        "title": "Diode Laser Hair Removal",
+        "description": "Diode laser treatment for unwanted hair, matched to skin and hair characteristics."
+      },
+      "hrSrIpl": {
+        "title": "HR, SR & IPL",
+        "description": "HR and SR laser and intense pulsed light treatments, selected according to individual needs."
+      },
+      "fractionalCo2Laser": {
+        "title": "Fractional CO₂ Laser",
+        "description": "Fractional CO₂ laser treatment for selected skin concerns and rejuvenation."
+      },
+      "tattooRemovalLaser": {
+        "title": "Laser Tattoo Removal",
+        "description": "Laser treatment to reduce the appearance of selected tattoos, after professional assessment."
+      }
+    }
+  },
+  "BlogPage": {
+    "hero": {
+      "eyebrow": "Insights & Guidance",
+      "title": "Knowledge for better skin, hair, and aesthetic care.",
+      "description": "Explore practical insights and professional perspectives from Dr. Ahmad Fahim Sakha on skin health, hair restoration, medical aesthetics, and modern treatment approaches."
+    },
+    "featured": {
+      "eyebrow": "Featured Article",
+      "readArticle": "Read Article"
+    },
+    "directory": {
+      "eyebrow": "Latest Articles",
+      "title": "Explore our latest insights",
+      "description": "Discover articles covering skin, hair, aesthetics, and treatment considerations.",
+      "readMore": "Read More",
+      "viewAll": "View All Articles",
+      "noArticles": "No articles available yet.",
+      "noArticlesDescription": "New articles and professional insights will appear here."
+    },
+    "categories": {
+      "all": "All",
+      "skin": "Skin",
+      "hair": "Hair",
+      "aesthetics": "Aesthetics",
+      "laser": "Laser",
+      "general": "General"
+    },
+    "article": {
+      "published": "Published",
+      "updated": "Updated",
+      "minRead": "min read",
+      "by": "By",
+      "backToBlog": "Back to Blog",
+      "relatedArticles": "Related Articles",
+      "shareArticle": "Share Article",
+      "copyLink": "Copy Link",
+      "linkCopied": "Link Copied",
+      "previousArticle": "Previous Article",
+      "nextArticle": "Next Article"
+    },
+    "cta": {
+      "eyebrow": "Have a question?",
+      "title": "Your care should begin with the right information.",
+      "description": "If you are considering a treatment or have concerns about your skin, hair, or appearance, discuss your needs with Dr. Sakha.",
+      "button": "Book an Appointment"
+    },
+    "meta": {
+  "minRead": "{minutes} min read",
+  "updated": "Updated {date}",
+  "by": "By {name}"
+}
+  },
+  
+ "ContactPage": {
+    "hero": {
+      "eyebrow": "Contact Dr. Sakha",
+      "title": "Let’s start with a conversation.",
+      "description": "Have a question about your skin, hair, or aesthetic concerns? Contact Dr. Ahmad Fahim Sakha to discuss your needs and request a consultation.",
+      "viewContact": "View contact details",
+      "visualLabel": "Direct care"
+    },
+    "contactInfo": {
+      "eyebrow": "Get in Touch",
+      "title": "Reach Dr. Sakha directly",
+      "description": "For questions, appointment requests, or treatment inquiries, you can contact Dr. Sakha by phone, WhatsApp, email, or through the location link.",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email",
+      "location": "Location"
+    },
+    "consultation": {
+      "eyebrow": "Request a Consultation",
+      "title": "Tell us what you would like to discuss.",
+      "description": "Share a few details about your concern and preferred contact method. This helps Dr. Sakha understand how to assist you.",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service",
+      "preferredContact": "Preferred Contact Method",
+      "message": "Message",
+      "messageOptional": "Optional",
+      "messagePlaceholder": "Tell us briefly about your concern...",
+      "submit": "Request a Consultation",
+      "submitting": "Sending…",
+      "success": "Thank you. Your consultation request has been submitted.",
+      "error": "Something went wrong. Please try again or contact Dr. Sakha directly.",
+      "requiredName": "Please enter your full name.",
+      "requiredPhone": "Please enter your phone number.",
+      "requiredService": "Please select a service.",
+      "requiredContact": "Please select a preferred contact method.",
+      "disclaimer": "This form is a consultation request, not a medical diagnosis. Treatment suitability can only be determined after professional assessment.",
+      "contactMethods": {
+        "phone": "Phone",
+        "whatsapp": "WhatsApp",
+        "either": "Either"
+      },
+      "services": {
+        "hair-transplant": "Hair Transplantation",
+        "beard-transplant": "Beard Transplantation",
+        "eyebrow-transplant": "Eyebrow Transplantation",
+        "hair-loss-treatment": "Hair Loss Treatment",
+        "prp-hair-face": "PRP Hair & Face",
+        "mesotherapy-hair-face": "Mesotherapy Hair & Face",
+        "mesogel": "Mesogel",
+        "biofiller": "Biofiller",
+        "botox": "Botox",
+        "lip-filler": "Lip Filler",
+        "cheek-filler": "Cheek Filler",
+        "nose-filler": "Nose Filler",
+        "under-eye-filler": "Under-Eye Filler",
+        "acne-treatment": "Acne Treatment",
+        "hydrafacial": "Hydrafacial",
+        "microneedling": "Microneedling",
+        "laser-hair-removal": "Diode Laser Hair Removal",
+        "hr-sr-ipl": "HR-SR & IPL",
+        "fractional-co2-laser": "Fractional CO₂ Laser",
+        "tattoo-removal-laser": "Tattoo Removal Laser"
+      }
+    },
+    "location": {
+      "eyebrow": "Find Dr. Sakha",
+      "title": "Visit Dr. Sakha in Mazar-e-Sharif.",
+      "description": "Dr. Sakha is available in Mazar-e-Sharif, Afghanistan. Use the map link for directions.",
+      "openMap": "Open in Google Maps",
+      "visualLabel": "Location in Mazar-e-Sharif"
+    },
+    "direct": {
+      "eyebrow": "Prefer a direct conversation?",
+      "title": "Contact Dr. Sakha directly.",
+      "description": "For a quick question or appointment request, reach out by phone or WhatsApp.",
+      "call": "Call Dr. Sakha",
+      "whatsapp": "WhatsApp Dr. Sakha"
+    }
+  }
+
+}

@@ -1,68 +1,49 @@
-export interface ServiceImage {
-  /** Leave unset until real service photography is supplied — ServiceCard falls back to ImagePlaceholder. */
-  src?: string;
-  alt: string;
+/**
+ * Structure for the Signature Services section.
+ *
+ * Holds translation KEYS and locale-agnostic PATHS only — never visible text.
+ * All copy lives in messages/*.json under the "SignatureServices" namespace.
+ * Order here is the display order (the first entry is the featured service).
+ *
+ * SLUGS: this is the single place where service routes are defined. Set
+ * `slug` to the existing slug of the page each service should open
+ * (e.g. slug: "hair-transplant" -> "/services/hair-transplant"). While a
+ * slug is unset, the item links to the real services index ("/services"), so
+ * no link can point to a route that does not exist.
+ */
+
+/** Keys under "SignatureServices.services". */
+export type ServiceKey =
+  | "hairTransplant"
+  | "hairLoss"
+  | "aesthetics"
+  | "skin"
+  | "laser"
+  | "facialFillers";
+
+export interface ServiceConfig {
+  key: ServiceKey;
+  /** Existing slug under /services/[slug]. Leave unset to link to /services. */
+  slug?: string;
 }
 
-export interface ServiceItem {
-  id: string;
-  title: string;
-  description: string;
-  href: string;
-  image: ServiceImage;
-}
+export const servicesIndexPath = "/services";
 
-export interface SignatureServicesData {
-  eyebrow: string;
-  heading: string;
-  description: string;
-  services: ServiceItem[];
-}
+/** Existing appointment destination used across the site. */
+export const appointmentPath = "/book-a-consultation";
 
-export const signatureServicesData: SignatureServicesData = {
-  eyebrow: "Signature Services",
-  heading: "Care designed around your goals.",
-  description:
-    "Explore Sakha's core areas of care, from hair restoration and dermatology to skin and aesthetic treatments.",
-  services: [
-    {
-      id: "hair-transplant",
-      title: "Hair Transplant",
-      description:
-        "Personalized hair restoration focused on a natural-looking appearance and an approach suited to your individual goals.",
-      href: "/services/hair-transplant",
-      image: {
-        alt: "A hair restoration consultation at the Sakha clinic",
-      },
-    },
-    {
-      id: "dermatology",
-      title: "Dermatology",
-      description:
-        "Professional dermatological care for a range of skin and hair concerns, guided by individual assessment.",
-      href: "/services/dermatology",
-      image: {
-        alt: "A dermatology assessment room at the Sakha clinic",
-      },
-    },
-    {
-      id: "skin-treatments",
-      title: "Skin Treatments",
-      description: "Thoughtful treatments focused on skin appearance, texture, and overall care.",
-      href: "/services/skin-treatments",
-      image: {
-        alt: "A skin treatment in progress at the Sakha clinic",
-      },
-    },
-    {
-      id: "aesthetic-treatments",
-      title: "Aesthetic Treatments",
-      description:
-        "A curated approach to aesthetic care designed around your preferences and treatment goals.",
-      href: "/services/aesthetic-treatments",
-      image: {
-        alt: "An aesthetic treatment consultation at the Sakha clinic",
-      },
-    },
-  ],
-};
+export const services: ServiceConfig[] = [
+  { key: "hairTransplant" },
+  { key: "hairLoss" },
+  { key: "aesthetics" },
+  { key: "skin" },
+  { key: "laser" },
+  { key: "facialFillers" },
+];
+
+/** Locale-agnostic href for a service; the i18n `Link` adds the locale prefix. */
+export function getServiceHref(service: ServiceConfig): string {
+  return service.slug
+    ? `${servicesIndexPath}/${service.slug}`
+    : servicesIndexPath;
+}

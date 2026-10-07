@@ -1,0 +1,12 @@
+{
+  "_README": "Merge ONLY the 'meta' object into BlogPage in the matching file. Everything else in BlogPage already exists. Delete this _README key.",
+  "en": {
+    "meta": { "minRead": "{minutes} min read", "updated": "Updated {date}", "by": "By {name}" }
+  },
+  "fa": {
+    "meta": { "minRead": "{minutes} دقیقه مطالعه", "updated": "به‌روزرسانی: {date}", "by": "نوشته‌ی {name}" }
+  },
+  "ps": {
+    "meta": { "minRead": "{minutes} دقیقې لوستل", "updated": "تازه شوی: {date}", "by": "لیکوال: {name}" }
+  }
+}

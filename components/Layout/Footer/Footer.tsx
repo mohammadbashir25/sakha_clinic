@@ -1,51 +1,62 @@
-import {Container} from "@/components/ui/Container";
-import {Divider} from "@/components/ui/Divider";
-import { footerData } from "./data";
+import { getTranslations } from "next-intl/server";
+import { Container } from "@/components/ui/Container";
+import { footerNav, footerAppointmentHref, footerContactHref } from "./data";
 import FooterBrand from "./FooterBrand";
 import FooterLinks from "./FooterLinks";
+import { LanguageSwitcher } from "../Navbar/LanguageSwitcher";
 
 /**
- * Footer — the final frame of the Sakha website.
+ * Footer — the quiet final element of the site.
  *
- * Stays a Server Component. FooterBrand and FooterLinks are Client
- * Components that each own a small, restrained motion reveal, so the
- * animation code only loads where it's actually used.
+ * Server Component. Copy is resolved via next-intl and passed down as
+ * plain strings. The only client code is the language switcher.
  */
-export default function Footer() {
-  const { brand, navigation, services, contact, copyright, legalLinks } =
-    footerData;
+export default async function Footer() {
+  const t = await getTranslations("Footer");
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#210038] px-6 py-16">
+    <footer className="bg-[#210038] px-6 pb-8 pt-16 text-[#FAF8F5] sm:pt-20">
       <Container>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[minmax(0,1fr)_2fr]">
-          <FooterBrand brand={brand} />
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:gap-10">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <FooterBrand
+              name={t("brandName")}
+              fullName={t("brandFullName")}
+              description={t("description")}
+            />
+          </div>
+
           <FooterLinks
-            navigation={navigation}
-            services={services}
-            contact={contact}
+            navigationTitle={t("navigationTitle")}
+            navItems={footerNav.map((item) => ({
+              href: item.href,
+              label: t(item.key),
+            }))}
+            contactTitle={t("contactTitle")}
+            locationLabel={t("locationLabel")}
+            location={t("location")}
+            getInTouchLabel={t("getInTouch")}
+            getInTouchHref={footerContactHref}
+            appointmentTitle={t("appointmentTitle")}
+            appointmentLabel={t("bookAppointment")}
+            appointmentHref={footerAppointmentHref}
           />
         </div>
 
-        <Divider className="my-10 border-[#F2EAF4]/10" />
+        <div className="mt-14 border-t border-[#F2EAF4]/10 pt-8">
+          <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+            <div className="max-w-2xl space-y-3">
+              <p className="text-sm text-[#F2EAF4]/70">
+                {t("copyright", { year })}
+              </p>
+              <p className="text-xs leading-relaxed text-[#F2EAF4]/55 sm:text-[13px]">
+                {t("disclaimer")}
+              </p>
+            </div>
 
-        <div className="flex flex-col-reverse items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
-          <p className="text-xs text-[#F2EAF4]/50">{copyright}</p>
-
-          {legalLinks && legalLinks.length > 0 && (
-            <ul className="flex items-center gap-6">
-              {legalLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-xs text-[#F2EAF4]/50 transition-colors duration-200 hover:text-[#C96BD5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#C96BD5]"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+            <LanguageSwitcher />
+          </div>
         </div>
       </Container>
     </footer>

@@ -37,6 +37,12 @@ export function MobileSidebar({ open, onClose }: MobileSidebarProps) {
     };
   }, [open, onClose]);
 
+  async function handleSignOut() {
+    onClose();
+    await fetch("/api/admin/logout", { method: "POST" });
+    window.location.href = "/admin/login";
+  }
+
   return (
     <AnimatePresence>
       {open && (
@@ -58,17 +64,28 @@ export function MobileSidebar({ open, onClose }: MobileSidebarProps) {
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
-            transition={{ duration: shouldReduceMotion ? 0 : 0.25, ease: [0.32, 0.72, 0, 1] }}
+            transition={{
+              duration: shouldReduceMotion ? 0 : 0.25,
+              ease: [0.32, 0.72, 0, 1],
+            }}
             className="absolute inset-y-0 left-0 flex w-72 max-w-[85vw] flex-col bg-primary-dark px-4 py-6 shadow-xl"
           >
             <div className="flex items-center justify-between px-2 pb-6">
-              <Link href="/admin" onClick={onClose} className="flex items-center gap-3">
+              <Link
+                href="/admin"
+                onClick={onClose}
+                className="flex items-center gap-3"
+              >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-champagne/15 text-sm font-semibold text-champagne">
                   S
                 </span>
                 <span className="flex flex-col leading-tight">
-                  <span className="text-sm font-semibold tracking-[0.08em] text-ivory">SAKHA</span>
-                  <span className="text-[11px] tracking-[0.14em] text-lavender/50">Admin</span>
+                  <span className="text-sm font-semibold tracking-[0.08em] text-ivory">
+                    SAKHA
+                  </span>
+                  <span className="text-[11px] tracking-[0.14em] text-lavender/50">
+                    Admin
+                  </span>
                 </span>
               </Link>
 
@@ -92,9 +109,13 @@ export function MobileSidebar({ open, onClose }: MobileSidebarProps) {
             <div className="border-t border-white/10 pt-4">
               <button
                 type="button"
+                onClick={handleSignOut}
                 className="flex w-full items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium text-lavender/60 transition-colors duration-200 hover:bg-white/5 hover:text-ivory focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-champagne"
               >
-                <LuLogOut className="h-[18px] w-[18px] shrink-0" aria-hidden="true" />
+                <LuLogOut
+                  className="h-[18px] w-[18px] shrink-0"
+                  aria-hidden="true"
+                />
                 <span>Sign out</span>
               </button>
             </div>
