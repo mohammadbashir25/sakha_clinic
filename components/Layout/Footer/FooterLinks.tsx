@@ -7,6 +7,15 @@ interface FooterLinksProps {
   contactTitle: string;
   locationLabel: string;
   location: string;
+  phoneLabel: string;
+  phone: string;
+  phoneHref: string;
+  whatsappLabel: string;
+  whatsapp: string;
+  whatsappHref: string;
+  emailLabel: string;
+  email: string;
+  emailHref: string;
   getInTouchLabel: string;
   getInTouchHref: string;
   appointmentTitle: string;
@@ -23,6 +32,15 @@ export default function FooterLinks({
   contactTitle,
   locationLabel,
   location,
+  phoneLabel,
+  phone,
+  phoneHref,
+  whatsappLabel,
+  whatsapp,
+  whatsappHref,
+  emailLabel,
+  email,
+  emailHref,
   getInTouchLabel,
   getInTouchHref,
   appointmentTitle,
@@ -61,9 +79,15 @@ export default function FooterLinks({
             <p className="mt-0.5 text-sm text-[#F2EAF4]/80">{location}</p>
           </div>
         </div>
-        <Link href={getInTouchHref} className={`${linkClass} mt-3`}>
-          {getInTouchLabel}
-        </Link>
+        <div className="mt-3 space-y-2">
+          <p className="text-xs text-[#F2EAF4]/55">{phoneLabel}</p>
+          <a href={phoneHref} className={linkClass}>{phone}</a>
+          <p className="text-xs text-[#F2EAF4]/55">{whatsappLabel}</p>
+          <a href={whatsappHref} target="_blank" rel="noopener noreferrer" className={linkClass}>{whatsapp}</a>
+          <p className="text-xs text-[#F2EAF4]/55">{emailLabel}</p>
+          <a href={emailHref} className={`${linkClass} break-all`}>{email}</a>
+          <div><Link href={getInTouchHref} className={linkClass}>{getInTouchLabel}</Link></div>
+        </div>
       </div>
 
       <div>

@@ -1,4 +1,4 @@
-import { LuCircleDot, LuFileText, LuImages, LuPencilLine } from "react-icons/lu";
+import { LuCircleDot, LuFileText, LuPencilLine, LuMessageSquareQuote } from "react-icons/lu";
 import type { IconType } from "react-icons";
 import type { ContentStats } from "@/types/admin";
 import { Reveal } from "./Reveal";
@@ -21,10 +21,30 @@ interface StatDefinition {
  */
 export function DashboardStats({ stats }: DashboardStatsProps) {
   const items: StatDefinition[] = [
-    { label: "Blog posts", value: stats.totalBlogs, context: "in the content library", icon: LuFileText },
-    { label: "Published", value: stats.published, context: "live on the website", icon: LuCircleDot },
-    { label: "Drafts", value: stats.drafts, context: "not yet published", icon: LuPencilLine },
-    { label: "Images", value: stats.images, context: "in the media library", icon: LuImages },
+    {
+      label: "Blog posts",
+      value: stats.totalBlogs,
+      context: "in the content library",
+      icon: LuFileText,
+    },
+    {
+      label: "Published",
+      value: stats.published,
+      context: "live on the website",
+      icon: LuCircleDot,
+    },
+    {
+      label: "Drafts",
+      value: stats.drafts,
+      context: "not yet published",
+      icon: LuPencilLine,
+    },
+    {
+      label: "Testimonials",
+      value: stats.testimonials,
+      context: "saved in the dashboard",
+      icon: LuMessageSquareQuote,
+    },
   ];
 
   return (
@@ -46,7 +66,10 @@ export function DashboardStats({ stats }: DashboardStatsProps) {
               ].join(" ")}
             >
               <dt className="flex items-center gap-2 text-sm font-medium text-muted">
-                <Icon className="h-4 w-4 shrink-0 text-orchid/70" aria-hidden="true" />
+                <Icon
+                  className="h-4 w-4 shrink-0 text-orchid/70"
+                  aria-hidden="true"
+                />
                 {item.label}
               </dt>
               <dd className="text-2xl font-semibold tabular-nums text-charcoal sm:text-[28px]">

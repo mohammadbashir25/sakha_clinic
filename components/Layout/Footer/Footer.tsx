@@ -4,6 +4,7 @@ import { footerNav, footerAppointmentHref, footerContactHref } from "./data";
 import FooterBrand from "./FooterBrand";
 import FooterLinks from "./FooterLinks";
 import { LanguageSwitcher } from "../Navbar/LanguageSwitcher";
+import { contactDetails } from "@/components/contact/contact-details";
 
 /**
  * Footer — the quiet final element of the site.
@@ -35,7 +36,16 @@ export default async function Footer() {
             }))}
             contactTitle={t("contactTitle")}
             locationLabel={t("locationLabel")}
-            location={t("location")}
+            location={`${contactDetails.exactAddress}, ${t("location")}`}
+            phoneLabel={t("phoneLabel")}
+            phone={contactDetails.phoneDisplay}
+            phoneHref={`tel:${contactDetails.phone}`}
+            whatsappLabel={t("whatsappLabel")}
+            whatsapp={contactDetails.whatsappDisplay}
+            whatsappHref={`https://wa.me/${contactDetails.whatsappNumber}`}
+            emailLabel={t("emailLabel")}
+            email={contactDetails.email}
+            emailHref={`mailto:${contactDetails.email}`}
             getInTouchLabel={t("getInTouch")}
             getInTouchHref={footerContactHref}
             appointmentTitle={t("appointmentTitle")}

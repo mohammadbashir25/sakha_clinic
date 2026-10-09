@@ -296,7 +296,7 @@ export const mockStats: ContentStats = {
   totalBlogs: mockBlogPosts.length,
   published: mockBlogPosts.filter((post) => post.status === "published").length,
   drafts: mockBlogPosts.filter((post) => post.status === "draft").length,
-  images: mockImages.length,
+  testimonials: mockTestimonials.length,
 };
 
 export const recentBlogPosts = [...mockBlogPosts]

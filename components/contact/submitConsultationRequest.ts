@@ -6,14 +6,19 @@ export interface ConsultationRequestPayload {
   message: string;
 }
 
-/**
- * Keep this as the integration seam until a real backend/email endpoint exists.
- * The current project does not have a real consultation backend yet.
- */
 export async function submitConsultationRequest(
   payload: ConsultationRequestPayload,
 ): Promise<{ success: true }> {
-  void payload;
-  await new Promise((resolve) => setTimeout(resolve, 600));
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  const result = (await response.json().catch(() => ({}))) as { message?: string };
+  if (!response.ok) {
+    throw new Error(result.message || "Unable to send your request. Please try again.");
+  }
+
   return { success: true };
 }

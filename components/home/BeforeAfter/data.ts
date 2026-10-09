@@ -52,4 +52,4 @@ export const beforeAfterCases: BeforeAfterCase[] = [
 ];
 
 /** Existing appointment destination used across the site. */
-export const appointmentPath = "/book-a-consultation";
+export const appointmentPath = "/contact";

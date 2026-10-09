@@ -1,19 +1,31 @@
 export type BlogFormMode = "add" | "edit" | null;
+export type ContentLocale = "en" | "fa" | "ps";
 
-/**
- * Fields the Add/Edit form collects. Mirrors BlogPost minus id/createdAt/updatedAt.
- * Note: `content` isn't on the current BlogPost type in types/admin.ts yet — see
- * the note where this form is wired up.
- */
-export interface BlogFormValues {
+export interface BlogTranslationValues {
   title: string;
-  slug: string;
   excerpt: string;
   content: string;
-  category: string;
   author: string;
-  coverImage: string;
   coverImageAlt: string;
+}
+
+export interface BlogFormValues {
+  translations: Record<ContentLocale, BlogTranslationValues>;
+  slug: string;
+  category: string;
+  coverImage: string;
   status: "published" | "draft";
   date: string;
 }
+
+export const emptyBlogTranslations: Record<ContentLocale, BlogTranslationValues> = {
+  en: { title: "", excerpt: "", content: "", author: "Dr. Ahmad Fahim Sakha", coverImageAlt: "" },
+  fa: { title: "", excerpt: "", content: "", author: "داکتر احمد فهیم سخا", coverImageAlt: "" },
+  ps: { title: "", excerpt: "", content: "", author: "ډاکټر احمد فهیم سخا", coverImageAlt: "" },
+};
+
+export const localeLabels: Record<ContentLocale, string> = {
+  en: "English",
+  fa: "دری",
+  ps: "پښتو",
+};

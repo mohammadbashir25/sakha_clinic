@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LuImagePlus, LuPenLine } from "react-icons/lu";
+import { LuPenLine } from "react-icons/lu";
 import type { IconType } from "react-icons";
 import { Reveal } from "./Reveal";
 
@@ -16,12 +16,6 @@ const actions: QuickAction[] = [
     description: "Write a new article for the Sakha journal",
     href: "/admin/blogs/add",
     icon: LuPenLine,
-  },
-  {
-    label: "Upload image",
-    description: "Add clinic photography to the media library",
-    href: "/admin/images",
-    icon: LuImagePlus,
   },
 ];
 

@@ -3,20 +3,16 @@
     "brandName": "Sakha",
     "brandFullName": "Dr. Ahmad Fahim Sakha",
     "brandSubtitle": "Dermatology · Hair · Medical Aesthetics",
-
     "home": "Home",
     "about": "About Dr. Sakha",
     "services": "Services",
     "blog": "Blog",
     "contact": "Contact",
-
     "bookAppointment": "Book an Appointment",
     "menu": "Menu",
     "close": "Close",
-
     "language": "Language",
     "selectLanguage": "Select language",
-
     "languages": {
       "en": "English",
       "fa": "Dari",
@@ -38,14 +34,12 @@
     "doctorTitle": "Dermatology · Hair · Medical Aesthetics · Hair Transplant · Laser",
     "quote": "More change does not always mean better results. The goal is to preserve your natural identity while improving what matters to you."
   },
-    "ProblemDesire": {
+  "ProblemDesire": {
     "eyebrow": "Your concerns matter",
     "title": "Understanding your concerns is the first step.",
     "description": "Skin, hair, and appearance concerns are different for every person. The right approach begins with understanding your needs, evaluating what is appropriate, and choosing a treatment that fits you.",
-    
     "concernsTitle": "Common concerns",
     "concernsDescription": "Whether the concern involves your skin, hair, or facial appearance, every case deserves individual attention.",
-    
     "concerns": {
       "skin": "Persistent skin problems, acne, or scars",
       "hair": "Hair loss, thinning hair, or changes in hair density",
@@ -54,11 +48,9 @@
       "aesthetics": "Looking for subtle and natural aesthetic refinement",
       "laser": "Unwanted hair or concerns that may benefit from laser care"
     },
-
     "desireEyebrow": "What you are looking for",
     "desireTitle": "Natural results that still feel like you.",
     "desireDescription": "The goal is not to change who you are. It is to improve what matters to you while respecting your natural features, proportions, and individuality.",
-    
     "desires": {
       "natural": {
         "title": "Natural appearance",
@@ -77,7 +69,6 @@
         "description": "Improving the areas that matter to you while preserving your natural identity."
       }
     },
-
     "closing": "More change does not always mean a better result. The right treatment is the one that is appropriate for you."
   },
   "SignatureServices": {
@@ -86,7 +77,6 @@
     "description": "From hair restoration and medical aesthetics to skin care and laser treatments, each service is selected and performed according to your individual needs and professional assessment.",
     "viewAll": "Explore All Services",
     "bookAppointment": "Book an Appointment",
-
     "services": {
       "hairTransplant": {
         "number": "01",
@@ -125,14 +115,13 @@
         "link": "Explore Facial Fillers"
       }
     },
-
     "philosophy": {
       "eyebrow": "Dr. Sakha's Approach",
       "title": "The right treatment begins with the right assessment.",
       "description": "Every person has different skin, hair, facial structure, and goals. The aim is to choose an appropriate approach that respects those differences and supports natural, balanced results."
     }
   },
-    "BeforeAfter": {
+  "BeforeAfter": {
     "eyebrow": "Before & After",
     "title": "Real treatment journeys. Naturally presented.",
     "description": "A selection of client-provided before-and-after images showing visible changes following selected treatments. Each case is individual, and results may vary.",
@@ -148,29 +137,24 @@
     "ctaDescription": "Start with a professional assessment to understand which approach may be appropriate for you.",
     "bookAppointment": "Book an Appointment"
   },
-    "Testimonials": {
+  "Testimonials": {
     "eyebrow": "Patient Experiences",
     "title": "Real experiences, thoughtfully shared.",
     "description": "Read experiences shared by patients who have chosen Dr. Ahmad Fahim Sakha for their skin, hair, and aesthetic care.",
-
     "previous": "Previous testimonial",
     "next": "Next testimonial",
     "goToTestimonial": "Go to testimonial",
-
     "testimonial": "Testimonial",
     "treatment": "Treatment",
-
     "emptyTitle": "Patient experiences will appear here.",
     "emptyDescription": "Testimonials will be shared here as patients choose to provide their experience.",
-
     "errorTitle": "Testimonials are temporarily unavailable.",
     "errorDescription": "Please check back again later.",
-
     "ctaTitle": "Your care starts with a conversation.",
     "ctaDescription": "Begin with a professional assessment to discuss your concerns and explore an appropriate treatment approach.",
     "bookAppointment": "Book an Appointment"
   },
-    "FinalCTA": {
+  "FinalCTA": {
     "eyebrow": "Your next step",
     "title": "The right care begins with understanding what you need.",
     "description": "Whether you are considering hair restoration, skin treatment, or aesthetic care, your journey starts with a professional assessment and a treatment approach suited to you.",
@@ -178,47 +162,42 @@
     "secondaryCta": "Explore Services",
     "note": "Professional assessment · Personalized care · Natural-looking results"
   },
-    "Footer": {
+  "Footer": {
     "brandName": "Sakha",
     "brandFullName": "Dr. Ahmad Fahim Sakha",
     "description": "Dermatology, hair restoration, and medical aesthetics focused on professional assessment, personalized care, and natural-looking results.",
-
     "navigationTitle": "Explore",
     "contactTitle": "Contact",
     "appointmentTitle": "Appointments",
-
     "home": "Home",
     "about": "About Dr. Sakha",
     "services": "Services",
     "blog": "Blog",
     "contact": "Contact",
-
     "bookAppointment": "Book an Appointment",
     "getInTouch": "Get in Touch",
-
     "locationLabel": "Location",
     "location": "Mazar-e-Sharif, Afghanistan",
-
     "copyright": "© {year} Dr. Ahmad Fahim Sakha. All rights reserved.",
     "disclaimer": "Information on this website is for general informational purposes and does not replace professional medical consultation.",
-
     "language": "Language",
-    "followUs": "Follow Us"
+    "followUs": "Follow Us",
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "emailLabel": "Email"
   },
-    "AboutPage": {
+  "AboutPage": {
     "hero": {
       "eyebrow": "About Dr. Sakha",
       "title": "Medical precision, natural beauty, personalized care.",
       "description": "Dr. Ahmad Fahim Sakha works across dermatology, hair restoration, medical aesthetics, and laser treatments, with an approach centered on careful assessment and natural, balanced results."
     },
-
     "profile": {
       "eyebrow": "Dr. Ahmad Fahim Sakha",
       "title": "A thoughtful approach to skin, hair, and aesthetic care.",
       "description": "Dr. Ahmad Fahim Sakha is a physician working in dermatology, hair, medical aesthetics, hair transplantation, and laser treatments. His approach begins with understanding each person's needs before selecting an appropriate treatment.",
       "specialties": "Physician · Dermatology & Hair · Medical Aesthetics · Hair Transplantation · Laser"
     },
-
     "experience": {
       "eyebrow": "Professional Experience",
       "title": "Experience shaped across two healthcare settings.",
@@ -234,7 +213,6 @@
         "description": "More than two years of professional experience in Afghanistan, including private practice and Jihon Hospital."
       }
     },
-
     "approach": {
       "eyebrow": "His Approach",
       "title": "The goal is not more change. It is the right change.",
@@ -258,7 +236,6 @@
         }
       }
     },
-
     "expertise": {
       "eyebrow": "Areas of Practice",
       "title": "Focused care across skin, hair, and medical aesthetics.",
@@ -274,20 +251,17 @@
         "skinQuality": "Skin rejuvenation and skin-quality treatments"
       }
     },
-
     "biofiller": {
       "eyebrow": "A Specialized Interest",
       "title": "Biofiller and modern facial rejuvenation.",
       "description": "Biofiller is one of Dr. Sakha's areas of special focus. He has been involved in introducing and performing this approach in Afghanistan, with an emphasis on appropriate patient selection and natural-looking outcomes.",
       "note": "Treatment suitability is determined through individual professional assessment."
     },
-
     "learning": {
       "eyebrow": "Continuous Development",
       "title": "Keeping knowledge and skills current.",
       "description": "Dr. Sakha seeks to keep his knowledge and practical skills updated across dermatology, hair care, aesthetic procedures, injections, hair transplantation, and laser technologies so that treatment options can be considered thoughtfully for each patient."
     },
-
     "journey": {
       "eyebrow": "The Patient Journey",
       "title": "From assessment to follow-up.",
@@ -314,14 +288,12 @@
         }
       }
     },
-
     "philosophy": {
       "eyebrow": "A Personal Philosophy",
       "title": "More change does not always mean a better result.",
       "description": "The aim is to improve what matters to you while preserving your natural identity, proportions, and individual features.",
       "quote": "Medical precision. Natural beauty. Personalized care."
     },
-
     "cta": {
       "eyebrow": "Your Next Step",
       "title": "Start with a professional assessment.",
@@ -499,13 +471,12 @@
       "button": "Book an Appointment"
     },
     "meta": {
-  "minRead": "{minutes} min read",
-  "updated": "Updated {date}",
-  "by": "By {name}"
-}
+      "minRead": "{minutes} min read",
+      "updated": "Updated {date}",
+      "by": "By {name}"
+    }
   },
-  
- "ContactPage": {
+  "ContactPage": {
     "hero": {
       "eyebrow": "Contact Dr. Sakha",
       "title": "Let’s start with a conversation.",
@@ -538,7 +509,7 @@
       "messagePlaceholder": "Tell us briefly about your concern...",
       "submit": "Request a Consultation",
       "submitting": "Sending…",
-      "success": "Thank you. Your consultation request has been submitted.",
+      "success": "Thank you. Your appointment request has been sent to the clinic.",
       "error": "Something went wrong. Please try again or contact Dr. Sakha directly.",
       "requiredName": "Please enter your full name.",
       "requiredPhone": "Please enter your phone number.",
@@ -588,5 +559,4 @@
       "whatsapp": "WhatsApp Dr. Sakha"
     }
   }
-
 }

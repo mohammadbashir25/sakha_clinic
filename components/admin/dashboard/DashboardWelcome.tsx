@@ -1,4 +1,4 @@
-import { LuImage, LuPlus } from "react-icons/lu";
+import { LuMessageCircle, LuPlus } from "react-icons/lu";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "./Reveal";
 
@@ -15,7 +15,8 @@ export function DashboardWelcome() {
           Manage Sakha&rsquo;s website content from one place
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted">
-          Write and publish articles, and keep the clinic&rsquo;s photography up to date.
+          Write and publish multilingual articles, and manage patient testimonials
+          from the same dashboard.
         </p>
       </div>
 
@@ -23,8 +24,12 @@ export function DashboardWelcome() {
         <Button href="/admin/blogs/add" icon={<LuPlus className="h-4 w-4" />}>
           Add blog
         </Button>
-        <Button href="/admin/images" variant="outline" icon={<LuImage className="h-4 w-4" />}>
-          Manage images
+        <Button
+          href="/admin/testimonials"
+          variant="outline"
+          icon={<LuMessageCircle className="h-4 w-4" />}
+        >
+          Manage testimonials
         </Button>
       </div>
     </Reveal>

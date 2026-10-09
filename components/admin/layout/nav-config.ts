@@ -29,12 +29,6 @@ export const adminNavItems: AdminNavItem[] = [
     description: "Create and manage your medical articles",
   },
   {
-    label: "Images",
-    href: "/admin/images",
-    icon: LuImages,
-    description: "Manage the Sakha media library",
-  },
-    {
     label: "Testimonials",
     href: "/admin/testimonials",
     icon: FiMessageCircle,

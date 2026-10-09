@@ -9,7 +9,7 @@ interface TestimonialFormPanelProps {
   initialValues: TestimonialFormValues;
   services: string[];
   onClose: () => void;
-  onSubmit: (values: TestimonialFormValues) => void;
+  onSubmit: (values: TestimonialFormValues) => Promise<void> | void;
 }
 
 export function TestimonialFormPanel({

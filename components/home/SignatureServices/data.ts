@@ -30,7 +30,7 @@ export interface ServiceConfig {
 export const servicesIndexPath = "/services";
 
 /** Existing appointment destination used across the site. */
-export const appointmentPath = "/book-a-consultation";
+export const appointmentPath = "/contact";
 
 export const services: ServiceConfig[] = [
   { key: "hairTransplant" },

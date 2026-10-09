@@ -16,6 +16,7 @@ export interface BlogPost {
   date: string;
   coverImage: string;
   coverImageAlt: string;
+  translations?: Record<"en" | "fa" | "ps", { title: string; excerpt: string; content: string; author: string; coverImageAlt: string }>;
 }
 
 export interface MediaImage {
@@ -37,13 +38,14 @@ export interface Testimonial {
   rating: 1 | 2 | 3 | 4 | 5;
   published: boolean;
   date: string;
+  translations?: Record<"en" | "fa" | "ps", { quote: string; treatment: string }>;
 }
 
 export interface ContentStats {
   totalBlogs: number;
   published: number;
   drafts: number;
-  images: number;
+  testimonials: number;
 }
 
 

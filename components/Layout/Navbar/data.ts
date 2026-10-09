@@ -43,7 +43,7 @@ export const navItems: NavItem[] = [
 export const primaryCta: NavCta = {
   translationKey: "bookAppointment",
   // Existing appointment destination from the previous Navbar.
-  path: "/book-a-consultation",
+  path: "/contact",
 };
 
 /**

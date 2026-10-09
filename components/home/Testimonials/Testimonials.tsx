@@ -9,7 +9,7 @@ import { TestimonialsCarousel } from "./TestimonialsCarousel";
 import type { Testimonial } from "./types";
 
 /** Existing appointment destination used across the site. */
-const appointmentPath = "/book-a-consultation";
+const appointmentPath = "/contact";
 
 /**
  * Testimonials section. A Server Component: it loads the data through the

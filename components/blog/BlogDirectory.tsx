@@ -2,7 +2,10 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import { BLOG_CATEGORIES, type BlogCategory, type BlogPostView } from "./data";
+
+import { BLOG_CATEGORIES } from "./constant";
+import type { BlogCategory, BlogPostView } from "./data";
+
 import BlogCard from "./BlogCard";
 
 type Props = {

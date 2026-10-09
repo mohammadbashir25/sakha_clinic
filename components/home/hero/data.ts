@@ -28,7 +28,7 @@ export interface HeroData {
 }
 
 export const heroData: HeroData = {
-  primaryCta: { href: "/book-a-consultation" },
+  primaryCta: { href: "/contact" },
   secondaryCta: { href: "/services" },
   image: { src: "/images/sakh-img.png" },
 };
